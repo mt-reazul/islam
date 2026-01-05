@@ -1,3 +1,5 @@
+import HiddenAdminTrigger from "./HiddenAdminTrigger";
+
 const Footer = () => {
   return (
     <footer className="py-8 bg-secondary/30 border-t border-border/50">
@@ -8,7 +10,7 @@ const Footer = () => {
           </a>
           
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} All rights reserved
+            <HiddenAdminTrigger /> . All rights reserved
           </p>
 
           <nav className="flex gap-6 text-sm text-muted-foreground">
