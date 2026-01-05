@@ -6,7 +6,7 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: GraduationCap,
-      title: "Current Education",
+      title: "Currently Studying",
       description: "Diploma in Medical Technology",
       details: [
         "Institute of Health Technology, Sylhet",
