@@ -1,15 +1,28 @@
 import { GraduationCap, Hospital, Target, Heart } from "lucide-react";
 
+import { BookOpen } from "lucide-react";
+
 const AboutSection = () => {
   const highlights = [
     {
       icon: GraduationCap,
-      title: "Education",
+      title: "Current Education",
       description: "Diploma in Medical Technology",
       details: [
         "Institute of Health Technology, Sylhet",
         "Department: Radiology and Imaging",
         "Final Year (3rd Year)"
+      ]
+    },
+    {
+      icon: BookOpen,
+      title: "Study Background",
+      description: "Academic Journey",
+      details: [
+        "Cumilla Ideal College",
+        "Fakir Bazar High School and College",
+        "Raghurampur Gov. Primary School, Cumilla",
+        "Tulip Kindergarten School, Cumilla"
       ]
     },
     {
@@ -27,11 +40,6 @@ const AboutSection = () => {
       title: "MediChakri.com",
       description: "COO & Co-Founder - First Dedicated Medical Job Portal of Bangladesh",
       link: "https://medichakri.com",
-    },
-    {
-      icon: Heart,
-      title: "Passion",
-      description: "Quality patient care & healthcare employment solutions",
     },
   ];
 
