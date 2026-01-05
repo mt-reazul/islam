@@ -87,63 +87,35 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="gradient-card rounded-2xl p-8 border border-border/50">
-            <h3 className="font-heading font-semibold text-foreground text-2xl mb-6">
+          {/* Contact Form Card */}
+          <div className="gradient-card rounded-2xl p-8 border border-border/50 flex flex-col items-center justify-center text-center">
+            <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+              <Send className="text-primary" size={32} />
+            </div>
+            
+            <h3 className="font-heading font-semibold text-foreground text-2xl mb-4">
               Send a Message
             </h3>
             
-            <form className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm text-muted-foreground mb-2">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="John Doe"
-                    className="w-full px-4 py-3 rounded-xl bg-secondary/50 border border-border/50 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm text-muted-foreground mb-2">
-                    Your Email
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="john@example.com"
-                    className="w-full px-4 py-3 rounded-xl bg-secondary/50 border border-border/50 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm text-muted-foreground mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  placeholder="How can I help?"
-                  className="w-full px-4 py-3 rounded-xl bg-secondary/50 border border-border/50 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm text-muted-foreground mb-2">
-                  Message
-                </label>
-                <textarea
-                  rows={5}
-                  placeholder="Write your message here..."
-                  className="w-full px-4 py-3 rounded-xl bg-secondary/50 border border-border/50 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors resize-none"
-                />
-              </div>
-
-              <Button variant="hero" size="xl" className="w-full">
-                Send Message
+            <p className="text-muted-foreground mb-8 max-w-sm">
+              Have a question or want to work together? Fill out the form and I'll get back to you as soon as possible.
+            </p>
+            
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="w-full max-w-xs"
+              asChild
+            >
+              <a 
+                href="https://forms.gle/syv6dWxNMkC7spbk6" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Open Contact Form
                 <Send size={18} />
-              </Button>
-            </form>
+              </a>
+            </Button>
           </div>
         </div>
       </div>
