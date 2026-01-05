@@ -66,9 +66,9 @@ const AboutSection = () => {
               Ward Boys, and Attendants with healthcare employers across the country.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              My internship at Shaheed Suhrawardy Medical College and Hospital provided 
-              hands-on experience in X-ray, CT Scan, and Contrast radiography. I'm committed 
-              to both diagnostic imaging excellence and improving healthcare employment in Bangladesh.
+              I completed my <strong className="text-foreground">18-week internship</strong> at <strong className="text-foreground">Suhrawardy Medical College and Hospital</strong> in 
+              the <strong className="text-foreground">Radiology and Imaging</strong> department. During this period, I gained hands-on experience 
+              in X-ray, CT Scan, and Contrast X-ray procedures. I'm committed to both diagnostic imaging excellence and improving healthcare employment in Bangladesh.
             </p>
           </div>
 
