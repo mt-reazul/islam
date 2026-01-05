@@ -14,13 +14,14 @@ const AboutSection = () => {
     },
     {
       icon: Target,
-      title: "Focus",
-      description: "Diagnostic Imaging & Radiographic Techniques",
+      title: "MediChakri.com",
+      description: "COO & Co-Founder - Bangladesh's Medical Job Portal",
+      link: "https://medichakri.com",
     },
     {
       icon: Heart,
       title: "Passion",
-      description: "Quality patient care through accurate imaging",
+      description: "Quality patient care & healthcare employment solutions",
     },
   ];
 
@@ -48,35 +49,56 @@ const AboutSection = () => {
               rewarding, fueling my passion for diagnostic healthcare.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              During my internship at Shaheed Suhrawardy Medical College and Hospital, 
-              I gained valuable hands-on experience in various imaging modalities 
-              including General X-ray, CT Scan, and Contrast X-ray procedures. This 
-              experience has strengthened my technical skills and patient care abilities.
+              Beyond my studies, I serve as the <strong className="text-foreground">COO & Co-Founder of{" "}
+              <a href="https://medichakri.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                MediChakri.com
+              </a></strong> - Bangladesh's dedicated job portal for medical professionals. 
+              We connect Doctors, Nurses, DMF, Medical Technologists, Hospital Receptionists, 
+              Ward Boys, and Attendants with healthcare employers across the country.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I believe that accurate diagnostic imaging plays a crucial role in 
-              patient care, and I am committed to contributing to this vital field 
-              with dedication, precision, and compassion.
+              My internship at Shaheed Suhrawardy Medical College and Hospital provided 
+              hands-on experience in X-ray, CT Scan, and Contrast radiography. I'm committed 
+              to both diagnostic imaging excellence and improving healthcare employment in Bangladesh.
             </p>
           </div>
 
           {/* Highlight Cards */}
           <div className="grid sm:grid-cols-2 gap-6">
-            {highlights.map((item, index) => (
-              <div
-                key={item.title}
-                className="gradient-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-glow group"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="text-primary" size={24} />
+            {highlights.map((item, index) => {
+              const CardContent = (
+                <>
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <item.icon className="text-primary" size={24} />
+                  </div>
+                  <h3 className="font-heading font-semibold text-foreground text-lg mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                </>
+              );
+
+              return item.link ? (
+                <a
+                  key={item.title}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="gradient-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-glow group block"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {CardContent}
+                </a>
+              ) : (
+                <div
+                  key={item.title}
+                  className="gradient-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-glow group"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {CardContent}
                 </div>
-                <h3 className="font-heading font-semibold text-foreground text-lg mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground text-sm">{item.description}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

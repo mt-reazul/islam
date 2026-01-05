@@ -25,21 +25,21 @@ const HeroSection = () => {
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <p className="text-primary font-medium tracking-wider uppercase animate-slide-up">
-                Medical Technologist
+                Medical Technologist | COO & Co-Founder
               </p>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground animate-slide-up" style={{ animationDelay: "0.1s" }}>
                 Hi, I'm{" "}
                 <span className="text-primary">Reazul Islam</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground font-light animate-slide-up" style={{ animationDelay: "0.2s" }}>
-                Radiographer & Diagnostic Imaging Student
+                Radiographer & Co-Founder of <a href="https://medichakri.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">MediChakri.com</a>
               </p>
             </div>
 
             <p className="text-muted-foreground text-lg max-w-xl mx-auto lg:mx-0 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-              Final year student at Institute of Health Technology, Sylhet. 
-              Passionate about diagnostic imaging and patient care, with hands-on 
-              experience in X-ray, CT Scan, and Contrast radiography.
+              Final year student at IHT Sylhet & COO of MediChakri.com - Bangladesh's 
+              premier job portal for medical professionals including Doctors, Nurses, 
+              Medical Technologists, and healthcare staff.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up" style={{ animationDelay: "0.4s" }}>
