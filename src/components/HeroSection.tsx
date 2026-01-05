@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Stethoscope, Activity } from "lucide-react";
+import { ArrowDown, Stethoscope, Activity, HeartPulse, Pill, Syringe, Cross } from "lucide-react";
 import CVDownloadButton from "./CVDownloadButton";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
@@ -14,11 +14,23 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 gradient-glow animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
       
       {/* Floating Medical Icons */}
-      <div className="absolute top-20 right-20 text-primary/20 animate-float">
+      <div className="absolute top-20 right-20 text-primary/20 animate-float hidden sm:block">
         <Stethoscope size={60} />
       </div>
-      <div className="absolute bottom-32 left-20 text-primary/15 animate-float" style={{ animationDelay: "2s" }}>
+      <div className="absolute bottom-32 left-20 text-primary/15 animate-float hidden sm:block" style={{ animationDelay: "2s" }}>
         <Activity size={50} />
+      </div>
+      <div className="absolute top-40 left-[10%] text-primary/10 animate-float hidden md:block" style={{ animationDelay: "1s" }}>
+        <HeartPulse size={45} />
+      </div>
+      <div className="absolute top-[60%] right-[8%] text-primary/15 animate-float hidden md:block" style={{ animationDelay: "2.5s" }}>
+        <Pill size={40} />
+      </div>
+      <div className="absolute bottom-[20%] right-[15%] text-primary/10 animate-float hidden lg:block" style={{ animationDelay: "3s" }}>
+        <Syringe size={35} />
+      </div>
+      <div className="absolute top-[30%] left-[5%] text-primary/10 animate-float hidden lg:block" style={{ animationDelay: "0.5s" }}>
+        <Cross size={30} />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 pt-16 sm:pt-20">

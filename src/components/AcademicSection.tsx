@@ -76,14 +76,14 @@ const AcademicSection = () => {
                   className="border border-border/50 rounded-xl px-4 data-[state=open]:bg-primary/5 transition-colors"
                 >
                   <AccordionTrigger className="hover:no-underline py-4">
-                    <div className="flex items-center gap-3">
-                      <span className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm">
+                    <div className="flex items-center gap-3 flex-wrap sm:flex-nowrap">
+                      <span className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm flex-shrink-0">
                         {index + 1}
                       </span>
-                      <span className="font-heading font-semibold text-foreground">
+                      <span className="font-heading font-semibold text-foreground whitespace-nowrap">
                         {yearData.year}
                       </span>
-                      <span className="text-muted-foreground text-sm">
+                      <span className="text-muted-foreground text-sm whitespace-nowrap">
                         ({yearData.subjects.length} subjects)
                       </span>
                     </div>
