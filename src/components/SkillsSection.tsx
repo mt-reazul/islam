@@ -88,7 +88,7 @@ const SkillsSection = () => {
             <Radiation className="inline-block mr-3 text-primary" size={28} />
             Radiography Skills
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {technicalSkills.map((skill) => (
               <div
                 key={skill.name}
