@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Send, Linkedin, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   const contactInfo = [
@@ -72,16 +71,28 @@ const ContactSection = () => {
               <p className="text-muted-foreground mb-4">Follow me on:</p>
               <div className="flex gap-4">
                 <a
-                  href="#"
-                  className="w-12 h-12 rounded-xl bg-secondary/50 border border-border/50 flex items-center justify-center hover:bg-primary/20 hover:border-primary/30 transition-all duration-300"
-                >
-                  <Linkedin className="text-foreground" size={20} />
-                </a>
-                <a
-                  href="#"
+                  href="https://facebook.com/reazul.732"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 rounded-xl bg-secondary/50 border border-border/50 flex items-center justify-center hover:bg-primary/20 hover:border-primary/30 transition-all duration-300"
                 >
                   <Facebook className="text-foreground" size={20} />
+                </a>
+                <a
+                  href="https://instagram.com/reazul.732"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-xl bg-secondary/50 border border-border/50 flex items-center justify-center hover:bg-primary/20 hover:border-primary/30 transition-all duration-300"
+                >
+                  <Instagram className="text-foreground" size={20} />
+                </a>
+                <a
+                  href="https://wa.me/8801641696822?text=Hi%20Reazul.."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-xl bg-secondary/50 border border-border/50 flex items-center justify-center hover:bg-primary/20 hover:border-primary/30 transition-all duration-300"
+                >
+                  <MessageCircle className="text-foreground" size={20} />
                 </a>
               </div>
             </div>
