@@ -78,7 +78,7 @@ const CVDownloadButton = () => {
     <>
       <Button
         variant="outline"
-        size="lg"
+        size="xl"
         onClick={() => setIsOpen(true)}
         className="gap-2"
       >
