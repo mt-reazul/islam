@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Stethoscope, Activity } from "lucide-react";
 import CVDownloadButton from "./CVDownloadButton";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const HeroSection = () => {
   return (
@@ -70,16 +71,12 @@ const HeroSection = () => {
               <div className="absolute inset-0 gradient-teal rounded-full blur-3xl opacity-30 scale-90" />
               
               {/* Profile circle */}
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full gradient-card border-2 border-primary/30 flex items-center justify-center shadow-elevated overflow-hidden">
-                <div className="text-center space-y-4 p-8">
-                  <div className="w-24 h-24 mx-auto rounded-full bg-primary/20 flex items-center justify-center">
-                    <Stethoscope size={48} className="text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-lg font-heading font-semibold text-foreground">Reazul Islam</p>
-                    <p className="text-sm text-muted-foreground">Radiography Student</p>
-                  </div>
-                </div>
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-2 border-primary/30 flex items-center justify-center shadow-elevated overflow-hidden">
+                <img 
+                  src={profilePhoto} 
+                  alt="Reazul Islam - Radiographer & Co-Founder of MediChakri.com" 
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Floating badge */}
