@@ -18,7 +18,6 @@ const Header = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -31,8 +30,8 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#home" className="font-heading text-2xl font-bold text-gradient">
-          Nayeem
+        <a href="#home" className="font-heading text-2xl font-bold text-primary">
+          Reazul Islam
         </a>
 
         {/* Desktop Navigation */}
