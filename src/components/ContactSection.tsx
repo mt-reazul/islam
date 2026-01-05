@@ -90,7 +90,7 @@ const ContactSection = () => {
           {/* Embedded Google Form */}
           <div className="gradient-card rounded-2xl p-2 border border-border/50 overflow-hidden">
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSfFQz2cJ2V4uD9_v5G1J4L6Kf4dPq3z7V8yN5tR2xB3mW0A/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdqUtTjFPcAdjkXv9pv8EyHSbiEr1jFzoss-leTNCq6SI7bFw/viewform?embedded=true"
               width="100%"
               height="600"
               frameBorder="0"
