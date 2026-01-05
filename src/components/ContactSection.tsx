@@ -100,17 +100,17 @@ const ContactSection = () => {
             </div>
             
             {/* Form Container - hides Google header and branding */}
-            <div className="relative overflow-hidden" style={{ height: '480px' }}>
+            <div className="relative overflow-hidden" style={{ height: '450px' }}>
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSdqUtTjFPcAdjkXv9pv8EyHSbiEr1jFzoss-leTNCq6SI7bFw/viewform?embedded=true"
                 width="100%"
-                height="700"
+                height="800"
                 frameBorder="0"
                 marginHeight={0}
                 marginWidth={0}
                 className="absolute left-0 w-full"
                 style={{ 
-                  top: '-180px',
+                  top: '-260px',
                   filter: 'invert(1) hue-rotate(180deg)',
                   background: 'transparent'
                 }}
