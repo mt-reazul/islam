@@ -75,12 +75,12 @@ const AcademicSection = () => {
                   value={`year-${index}`}
                   className="border border-border/50 rounded-xl px-4 data-[state=open]:bg-primary/5 transition-colors"
                 >
-                  <AccordionTrigger className="hover:no-underline py-4">
-                    <div className="flex items-center gap-3 flex-wrap sm:flex-nowrap">
+                  <AccordionTrigger className="hover:no-underline py-4" hideChevron>
+                    <div className="flex items-center gap-2 sm:gap-3">
                       <span className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm flex-shrink-0">
                         {index + 1}
                       </span>
-                      <span className="font-heading font-semibold text-foreground whitespace-nowrap">
+                      <span className="font-heading font-semibold text-foreground">
                         {yearData.year}
                       </span>
                       <span className="text-muted-foreground text-sm whitespace-nowrap">
